@@ -1,0 +1,85 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="WaveGen" CircId="WaveGen-1" mainComp="false" Show_id="false" Show_Val="false" Pos="-264,-260" rotation="0" hflip="1" vflip="1" label="WaveGen-1" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Square" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="WaveGen" CircId="WaveGen-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-264,-232" rotation="0" hflip="1" vflip="1" label="WaveGen-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Saw" Freq="1 kHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="Subcircuit" CircId="DG401-3" mainComp="false" Show_id="true" Show_Val="false" Pos="-196,-268" rotation="0" hflip="1" vflip="1" label="DG401-3" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1e+09 Ω" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" Logic_Symbol="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-316,-156" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-4" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Voltimeter" CircId="Voltimeter-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-160,-96" rotation="0" hflip="1" vflip="1" label="Voltimeter-5" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-156,-40" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Buffer" CircId="Buffer-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-260,-132" rotation="0" hflip="1" vflip="1" label="Buffer-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Invert_Inputs="false" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Inverted="true" Open_Collector="false" Tristate="false" Tpd_ps="10 ns" Tr_ps="3 ns" Tf_ps="4 ns" />
+
+<item itemtype="opAmp" CircId="opAmp-8" mainComp="false" Show_id="false" Show_Val="false" Pos="-40,-244" rotation="0" hflip="1" vflip="1" label="opAmp-8" idLabPos="-16,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Gain="1000" Out_Imped="1e-14 Ω" Power_Pins="false" Switch_Pins="false" Volt_Pos="5 V" Volt_Neg="-5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-9" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-124,-244" rotation="0" hflip="1" vflip="1" label="Resistor-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1000 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-132,-216" rotation="0" hflip="1" vflip="1" label="Resistor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1000 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-11" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-36,-188" rotation="0" hflip="1" vflip="1" label="Resistor-11" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1000 Ω" />
+
+<item itemtype="Ground" CircId="Ground-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-52,-292" rotation="0" hflip="1" vflip="1" label="Ground-12" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Oscope" CircId="Oscope-13" mainComp="false" Show_id="false" Show_Val="false" Pos="124,-196" rotation="0" hflip="1" vflip="1" label="Oscope-13" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="264258180" TimPos="95718704,-76000000,138000000,138000000," VolDiv="0.750579,0.585169,0.0108493,0.0108493," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="-0.187645,-2.5245,0,0," />
+
+<item itemtype="Node" CircId="Node-14" mainComp="false" Pos="-284,-156" />
+
+<item itemtype="Node" CircId="Node-15" mainComp="false" Pos="-232,-156" />
+
+<item itemtype="Node" CircId="Node-16" mainComp="false" Pos="0,-244" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="-76,-224" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="-80,-256" />
+
+<item itemtype="Node" CircId="Node-19" mainComp="false" Pos="-76,-232" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="WaveGen-1-outnod" endpinid="DG401-3-D1" pointList="-248,-260,-204,-260" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="WaveGen-2-outnod" endpinid="DG401-3-D2" pointList="-248,-232,-228,-232,-228,-236,-204,-236" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Ground-6-Gnd" endpinid="Voltimeter-5-rPin" pointList="-156,-56,-156,-80,-152,-80" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Buffer-7-in0" endpinid="Node-14-1" pointList="-276,-132,-276,-156,-284,-156" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Fixed Voltage-4-outnod" endpinid="Node-14-0" pointList="-300,-156,-284,-156" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Node-14-2" endpinid="DG401-3-IN2" pointList="-284,-156,-284,-200,-212,-200,-212,-228,-204,-228" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Buffer-7-out" endpinid="Node-15-1" pointList="-244,-132,-244,-156,-232,-156" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Voltimeter-5-lPin" endpinid="Node-15-0" pointList="-168,-80,-212,-80,-212,-156,-232,-156" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Node-15-2" endpinid="DG401-3-IN1" pointList="-232,-156,-232,-252,-204,-252" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Resistor-9-lPin" endpinid="DG401-3-S1" pointList="-140,-244,-140,-260,-156,-260" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="DG401-3-S2" endpinid="Resistor-10-lPin" pointList="-156,-236,-148,-236,-148,-216" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Resistor-11-rPin" endpinid="Node-16-1" pointList="-20,-188,0,-188,0,-244" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="opAmp-8-output" endpinid="Node-16-0" pointList="-16,-244,0,-244" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Node-16-2" endpinid="Oscope-13-Pin0" pointList="0,-244,36,-244" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Oscope-13-Pin1" endpinid="Node-17-1" pointList="36,-212,16,-212,16,-128,-76,-128,-76,-224" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Resistor-10-rPin" endpinid="Node-17-0" pointList="-116,-216,-76,-216,-76,-224" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="opAmp-8-inputNinv" endpinid="Ground-12-Gnd" pointList="-64,-252,-64,-308,-52,-308" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Resistor-11-lPin" endpinid="Node-18-1" pointList="-52,-188,-80,-188,-80,-256" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Node-18-2" endpinid="Resistor-9-rPin" pointList="-80,-256,-108,-256,-108,-244" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="opAmp-8-inputInv" endpinid="Node-19-1" pointList="-64,-236,-76,-236,-76,-232" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Node-17-2" endpinid="Node-19-0" pointList="-76,-224,-76,-232" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Node-19-2" endpinid="Node-18-0" pointList="-76,-232,-76,-240,-80,-240,-80,-256" />
+
+</circuit>
