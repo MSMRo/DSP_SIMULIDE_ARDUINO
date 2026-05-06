@@ -12,6 +12,13 @@ Para poder usar y aprovechar todos los ejemplos, es necesario contar con los sig
 # Código de ejemplo funcionables:
 
 ![](./imgs/filtro_20hz.png)
+
+## Ejemplo01
 - Código arduino: filtro_pasa_bajo_20hz.ino
 - Circuito simulide: filtro_pasa_baja_UNO.sim1
 - signal usado: senal4_10_100hz.wav
+
+![](./imgs/dac_pwm_pdm_uno.png)
+## Ejemplo02
+- Código arduino: dac_pwam_pdm_100hz_150hz / sin10hz_pdm_uno_Timer1_v2 / sin10hz_pdm_uno
+- Circuito simulide: dac_pdm_pwm.sim1 / dac_pdm_pwm_v2.sim1
